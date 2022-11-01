@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Sonu Kumar - Full Stack Web Developer</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">Sonu Kumar</div>
+            <div class="nave_container ">
+                <ul class="nave_list" id="nlist">
+                    <li><a href="#"  class="nave_link">Home</a></li>
+                    <li><a href="#" class="nave_link">Services</a></li>
+                    <li><a href="#projects" onclick="change()" class="nave_link">Projects</a></li>
+                    <li><a href="#about" onclick="change()" class="nave_link">About</a></li>
+                    <li><a href="#contects" onclick="change()" class="nave_link">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="menu_btn" onclick="change()">
+                <span class="material-symbols-outlined" id="open">
+                    menu
+                </span>
+                <span class="material-symbols-outlined" id="close">
+                    close
+                </span>
+            </div>
+        </div>
+        <!-- *****************************************************************
+                    body first view design
+     ******************************************************************-->
+        <div class="intro">
+            <div class="intro_image">
+                <img src="sonukumar.png" alt="">
+            </div>
+            <div class="intro_description">
+                Hi, <span style="color:rgb(137, 196, 78)">I am</span> <br> <span>Sonu Kumar.</span>
+                <p>A Full Stack Web Developer</p>
+                <a href="myresume.pdf" class="resume-btn">Resume</a>
+            </div>
+
+        </div>
+
+        <!-- *****************************************************************
+                    About Section
+     ******************************************************************-->
+        <div class="section about" id="about">
+            <div class="about about-box">
+                <h2 class="section-title">About Me</h2>
+                <p>I'm a Full Stack Web Developer specialization MERN Stack who gained skills from Newton School. I am
+                    attentive and agile learner with a diverse foundation of tech industry. Also motivated,self-starter and
+                    leader with strong organizational and communicative abilities.</p>
+            </div>
+        </div>
+
+        
+        <!-- *****************************************************************
+                    Skils Section
+     ******************************************************************-->
+        <div class="section skills" id="skills">
+            <div class="skills skills-box">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>HTML: </p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>CSS: </p>
+                        <p>75%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>JAVASCRIPT: </p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="javascript-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>PHP: </p>
+                        <p>30%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="php-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>DSA: </p>
+                        <p>78%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="dsa-bar"></div>
+                    </div>
+                </div>
+                <div class="skill-name">
+                    <div class="sklt">
+                        <p>JAVA: </p>
+                        <p>73%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="java-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- *****************************************************************
+                    Project Section
+     ******************************************************************-->
+
+        <div class="section projects" id="projects">
+            <div class="projects project-box">
+                <h2 class="section-title">Projects</h2>
+                <div class="pro-section">Project1: <span class="pro-status">In Progress...</span></div>
+                <div class="pro-section">Project2: <span class="pro-status">In Progress...</span></div>
+                <div class="pro-section">Project3: <span class="pro-status">In Progress...</span></div>
+                <div class="pro-section">Project4: <span class="pro-status">In Progress...</span></div>
+            </div>
+        </div>
+
+ <!-- *****************************************************************
+                    contect Section
+     ******************************************************************-->
+        <div class="section contects" id="contects">
+            <div class="contects contect-box">
+                <h2 class="section-title">Contact</h2>
+                <div class="contect-section">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="contect-status">ysonu1071@gmail.com</span>
+                </div>
+                <div class="contect-section">
+                    <i class="fa-solid fa-mobile"></i>
+                    <span class="contect-status">7461920925</span>
+                </div>
+                <div class="contect-section">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="contect-status" id="linkedin"><a href="https://www.linkedin.com/in/sonu-kumar-40a09315b/">Linkedin</a></span>
+                </div>
+                <div class="contect-section">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span class="contect-status" id="facebook"><a href="https://www.facebook.com/profile.php?id=100023272250949&viewas=&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_transition=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true">Facebook</a></span>
+                </div>
+            </div>
+        </div>
+
+    <!-- *****************************************************************
+                    contect Section
+     ******************************************************************-->
+        <div class="footer">
+            <div class="footer-section">
+                
+                <span><i class="fa-regular fa-copyright"></i>All Rights Reserved: 2022 |</span>
+                <span> Designed By Sonu Kumar.</span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
